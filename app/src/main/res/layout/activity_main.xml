@@ -12,11 +12,21 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="304dp"
+        android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="right|center"
         android:inputType="text"
         android:text="0"
+        android:textSize="40pt" />
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
         android:gravity="right|center"
+        android:inputType="text"
+        android:text=""
         android:textSize="40pt" />
 
     <TableLayout
@@ -36,8 +46,8 @@
                 android:layout_marginRight="1pt"
                 />
             <Button
-                android:id="@+id/buBrackets"
-                android:text="()"
+                android:id="@+id/buBracketsOpen"
+                android:text="("
                 android:textSize="15pt"
                 android:height="30pt"
                 android:width="30pt"
@@ -45,8 +55,8 @@
                 android:layout_marginRight="1pt"
                 />
             <Button
-                android:id="@+id/buPercent"
-                android:text="%"
+                android:id="@+id/buBracketsClose"
+                android:text=")"
                 android:textSize="15pt"
                 android:height="30pt"
                 android:width="30pt"
@@ -187,8 +197,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
-                android:id="@+id/buPlusMinus"
-                android:text="+/-"
+                android:id="@+id/buPercent"
+                android:text="%"
+                android:gravity="center"
                 android:textSize="15pt"
                 android:height="30pt"
                 android:width="30pt"
@@ -224,4 +235,5 @@
                 />
         </TableRow>
     </TableLayout>
+
 </LinearLayout>
